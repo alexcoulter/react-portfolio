@@ -31,7 +31,6 @@ function Contact() {
         <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
         <div className="social-links">
           <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
-          <a href="#home"><i className="fa fa-angle-double-up"></i></a>
           <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
                 className="fa fa-linkedin fa-2x"></i></a></span>
 
