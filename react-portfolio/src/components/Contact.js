@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import resume from'../assets/AlexResume.pdf'
 
 function Contact() {
 
@@ -29,7 +30,7 @@ function Contact() {
       <div className="contactInfo text-center">
         <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
         <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
-        <span>Download my resume:</span><a className="resume" href="AlexResume.pdf" target="_blank"><button><i
+        <span>Download my resume:</span><a className="resume" href={resume} target="_blank" rel="noopener noreferrer"><button><i
               className="fa fa-download"></i></button></a>
         <div className="social-links">
           <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
