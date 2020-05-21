@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/alexcoulter.github.io/react-portfolio/static/css/main.07abbb45.chunk.css",
+    "main.js": "/alexcoulter.github.io/react-portfolio/static/js/main.593e44d3.chunk.js",
+    "main.js.map": "/alexcoulter.github.io/react-portfolio/static/js/main.593e44d3.chunk.js.map",
+    "runtime-main.js": "/alexcoulter.github.io/react-portfolio/static/js/runtime-main.bb2d6049.js",
+    "runtime-main.js.map": "/alexcoulter.github.io/react-portfolio/static/js/runtime-main.bb2d6049.js.map",
+    "static/js/2.f1c035f4.chunk.js": "/alexcoulter.github.io/react-portfolio/static/js/2.f1c035f4.chunk.js",
+    "static/js/2.f1c035f4.chunk.js.map": "/alexcoulter.github.io/react-portfolio/static/js/2.f1c035f4.chunk.js.map",
+    "index.html": "/alexcoulter.github.io/react-portfolio/index.html",
+    "precache-manifest.da472453d3d9d90092d473629bedb828.js": "/alexcoulter.github.io/react-portfolio/precache-manifest.da472453d3d9d90092d473629bedb828.js",
+    "service-worker.js": "/alexcoulter.github.io/react-portfolio/service-worker.js",
+    "static/css/main.07abbb45.chunk.css.map": "/alexcoulter.github.io/react-portfolio/static/css/main.07abbb45.chunk.css.map",
+    "static/js/2.f1c035f4.chunk.js.LICENSE.txt": "/alexcoulter.github.io/react-portfolio/static/js/2.f1c035f4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/alexcoulter.github.io/react-portfolio/static/media/camping.fb68fe26.jpg",
+    "static/media/empDir.jpg": "/alexcoulter.github.io/react-portfolio/static/media/empDir.8946edf3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb2d6049.js",
+    "static/js/2.f1c035f4.chunk.js",
+    "static/css/main.07abbb45.chunk.css",
+    "static/js/main.593e44d3.chunk.js"
+  ]
+}
