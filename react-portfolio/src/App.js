@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -12,7 +12,7 @@ function App() {
   return (
     <div class = "wrapper">
     <div id="page-content">
-    <BrowserRouter>
+    <HashRouter>
      <Navbar />
     <Switch>
       <Route exact path="/about" component={About} />
@@ -20,7 +20,7 @@ function App() {
       <Route exact path="/contact" component={Contact} />
       <Route path="/" component={Header} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
     <div class = "push"></div>
     </div>
      <Footer />

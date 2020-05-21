@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import meImg from "../assets/images/image1.jpeg";
 
 function About() {
 
@@ -17,7 +18,7 @@ function About() {
                 IT Technician for a small business in Chapel Hill. In my spare time I enjoy playing soccer and disc golf with friends, going to the gym, and playing
                 the guitar.
             </p></div>
-              <img className="me-pic img-fluid float-left" src="../assets/images/image1.jpeg" alt="Me" />
+              <img className="me-pic img-fluid float-left" src = {meImg} alt="Me" />
                 <div className="skills">
                   <h4><b>Technical Skills:</b></h4>
                   <ul>
