@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <div class = "wrapper">
+    <div className = "wrapper">
     <div id="page-content">
     <HashRouter>
      <Navbar />
@@ -21,7 +21,7 @@ function App() {
       <Route path="/" component={Header} />
       </Switch>
     </HashRouter>
-    <div class = "push"></div>
+    <div className = "push"></div>
     </div>
      <Footer />
      </div>

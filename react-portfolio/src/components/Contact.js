@@ -10,17 +10,17 @@ function Contact() {
 
       <form>
         <div className="form-group">
-          <label for="exampleInputName1">Name</label>
+          <label>Name</label>
           <input type="text" className="form-control" id="exampleInputName1" placeholder="Bob Smith" />
         </div>
 
         <div className="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label>Email address</label>
           <input type="email" className="form-control" id="exampleInputEmail1" placeholder="email@gmail.com" />
         </div>
 
         <div className="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
+          <label>Message</label>
           <textarea className="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
         </div>
 
