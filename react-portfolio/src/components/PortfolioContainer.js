@@ -7,16 +7,12 @@ import busImg from "../assets/images/businessSS.jpg";
 import empTrack from "../assets/images/usage.gif";
 import weatherImg from "../assets/images/weatherSs.jpg";
 import petImg from "../assets/images/petSs.jpg";
-import healthImg from "../assets/images/homepage.png";
+import healthImg from "../assets/images/health.gif";
 
 function PortfolioContainer() {
 
   const [index, setIndex] = useState([0]);
   
-  // useEffect(() => {
-  //   setIndex(0)
-  // }, []);
-
   var projArr = [{
     id: "healtcareProImg", img: healthImg, name: "Healthcare Pro ", description: "Role-based Full Stack application that allows doctors and patients to log in to separate portals and interact with one another in a multitude of ways.", tech: " Node.js, Express, MongoDB, Mongoose, React, Redux, JWT Tokens, Material-UI", projLink: " https://project3-healthcarepro.herokuapp.com/", ghLink: " https://github.com/gwlee244/project3"
   },

@@ -418,6 +418,21 @@ form {
   position:relative;
 }
 
+.success {
+  color: green;
+  padding: 25px;
+  border: 2px solid green;
+  background-color: #C8E6C9;
+}
+
+.failure {
+  margin-top: 10px;
+  color: red;
+  padding: 25px;
+  border: 2px solid red;
+  background-color: #ffcccc;
+}
+
 @keyframes shake {
   0% {
     transform: translate(1px, 1px) rotate(0deg);

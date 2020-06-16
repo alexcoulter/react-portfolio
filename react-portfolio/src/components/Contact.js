@@ -1,44 +1,79 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../App.css';
 
-function Contact() {
 
-  return (
-    <div className="py-4 bg-dark text-white" id="contactSect">
-    <div className="container" id="contact">
-      <h2 className="contact text-center">Contact Me</h2>
+class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
+    };
+  }
 
-      <form>
-        <div className="form-group">
-          <label>Name</label>
-          <input type="text" className="form-control" id="exampleInputName1" placeholder="Bob Smith" />
-        </div>
 
-        <div className="form-group">
-          <label>Email address</label>
-          <input type="email" className="form-control" id="exampleInputEmail1" placeholder="email@gmail.com" />
-        </div>
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
 
-        <div className="form-group">
-          <label>Message</label>
-          <textarea className="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-        </div>
+  render() {
+    const { status } = this.state;
+    return (
+      <div className="py-4 bg-dark text-white" id="contactSect">
+        <div className="container" id="contact">
+          <h2 className="contact text-center">Contact Me</h2>
 
-        <button type="submit" className="btn btn-primary">Submit</button>
-      </form>
-      <div className="contactInfo text-center">
-        <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
-        <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
-        <div className="social-links">
-          <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
-          <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
+          <form onSubmit={this.submitForm}
+        action="https://formspree.io/xknqzwvk"
+        method="POST">
+            <div className="form-group">
+              <label>Name</label>
+              <input type="text" className="form-control" id="exampleInputName1" name = "name" placeholder="Bob Smith" />
+
+            </div>
+
+            <div className="form-group">
+              <label>Email address</label>
+              <input type="email" className="form-control" id="exampleInputEmail1" name = "email" placeholder="email@gmail.com" />
+            </div>
+
+            <div className="form-group">
+              <label>Message</label>
+              <textarea name = "message" className="form-control" id="exampleFormControlTextarea1" rows="6" />
+            </div>
+
+            {status === "SUCCESS" ? <p className = "success">Thank you for sending me a message!</p> : <button>Submit</button>}
+        {status === "ERROR" && <p className = "failure">Ooops! There was an error. Please fill out all the fields and try again</p>}
+          </form>
+          <div className="contactInfo text-center">
+            <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
+            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
+            <div className="social-links">
+              <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
+              <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
                 className="fa fa-linkedin fa-2x"></i></a></span>
 
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  );
+    );
+  }
 }
 export default Contact
