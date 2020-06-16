@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.df74cb74.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.d4f20171.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.d4f20171.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.f9096e1e.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.a0608ff0.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.a0608ff0.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.d08fb9a1.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.d08fb9a1.js.map",
-    "static/js/2.7436aa6a.chunk.js": "/react-portfolio/static/js/2.7436aa6a.chunk.js",
-    "static/js/2.7436aa6a.chunk.js.map": "/react-portfolio/static/js/2.7436aa6a.chunk.js.map",
+    "static/js/2.a8013d51.chunk.js": "/react-portfolio/static/js/2.a8013d51.chunk.js",
+    "static/js/2.a8013d51.chunk.js.map": "/react-portfolio/static/js/2.a8013d51.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.360e2959c31627bdb17399c26009f9e1.js": "/react-portfolio/precache-manifest.360e2959c31627bdb17399c26009f9e1.js",
+    "precache-manifest.06c34d89cada6a29d0f0486af326c54a.js": "/react-portfolio/precache-manifest.06c34d89cada6a29d0f0486af326c54a.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
-    "static/css/main.df74cb74.chunk.css.map": "/react-portfolio/static/css/main.df74cb74.chunk.css.map",
-    "static/js/2.7436aa6a.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.7436aa6a.chunk.js.LICENSE.txt",
+    "static/css/main.f9096e1e.chunk.css.map": "/react-portfolio/static/css/main.f9096e1e.chunk.css.map",
+    "static/js/2.a8013d51.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.a8013d51.chunk.js.LICENSE.txt",
     "static/media/App.css": "/react-portfolio/static/media/camping.fb68fe26.jpg",
     "static/media/businessSS.jpg": "/react-portfolio/static/media/businessSS.d1cb9abc.jpg",
     "static/media/empDir.jpg": "/react-portfolio/static/media/empDir.8946edf3.jpg",
@@ -24,8 +24,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d08fb9a1.js",
-    "static/js/2.7436aa6a.chunk.js",
-    "static/css/main.df74cb74.chunk.css",
-    "static/js/main.d4f20171.chunk.js"
+    "static/js/2.a8013d51.chunk.js",
+    "static/css/main.f9096e1e.chunk.css",
+    "static/js/main.a0608ff0.chunk.js"
   ]
 }
