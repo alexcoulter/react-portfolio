@@ -57,8 +57,8 @@ class Contact extends Component {
               <textarea name = "message" className="form-control" id="exampleFormControlTextarea1" rows="6" />
             </div>
 
-            {status === "SUCCESS" ? <p className = "success">Thank you for sending me a message!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p className = "failure">Ooops! There was an error. Please fill out all the fields and try again</p>}
+            {status === "SUCCESS" ? <p className = "success">Thank you for sending me a message!</p> : <button className = "contactBtn">Submit</button>}
+        {status === "ERROR" && <p className = "failure">Ooops! There was an error. Please fill out all the fields and try againy</p>}
           </form>
           <div className="contactInfo text-center">
             <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
