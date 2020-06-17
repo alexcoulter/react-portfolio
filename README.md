@@ -45,7 +45,7 @@ I created this mobile-friendly portfolio to show prospective employers who I am 
 
 **Alex Coulter**      
 <img src= "https://avatars1.githubusercontent.com/u/19214549?v=4" style="border-radius: 18px" width="100px" style = "border: 2px solid green" />    
-- Email : [alexcoulter.unc@gmail.com](Alex_Coulter)
+- Email : alexcoulter.unc@gmail.com
 - Github : [@alexcoulter](https://github.com/alexcoulter)
 - LinkedIn : https://www.linkedin.com/in/alex-coulter/
 - Resume : https://docs.google.com/document/d/16-sLZyrg84ciyf4BrDgrZIAyitWzDowFE6qP5CQu_60/edit?usp=sharing
