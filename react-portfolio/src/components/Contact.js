@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Resume from "../assets/AlexResume.pdf"
 
 
 class Contact extends Component {
@@ -39,39 +40,47 @@ class Contact extends Component {
           <h2 className="contact text-center">Contact Me</h2>
 
           <form onSubmit={this.submitForm}
-        action="https://formspree.io/xknqzwvk"
-        method="POST">
+            action="https://formspree.io/xknqzwvk"
+            method="POST">
             <div className="form-group">
               <label>Name</label>
-              <input type="text" className="form-control" id="exampleInputName1" name = "name" placeholder="Bob Smith" />
+              <input type="text" className="form-control" id="exampleInputName1" name="name" placeholder="Bob Smith" />
 
             </div>
 
             <div className="form-group">
               <label>Email address</label>
-              <input type="email" className="form-control" id="exampleInputEmail1" name = "email" placeholder="email@gmail.com" />
+              <input type="email" className="form-control" id="exampleInputEmail1" name="email" placeholder="email@gmail.com" />
             </div>
 
             <div className="form-group">
               <label>Message</label>
-              <textarea name = "message" className="form-control" id="exampleFormControlTextarea1" rows="6" />
+              <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="6" />
             </div>
 
-            {status === "SUCCESS" ? <p className = "success">Thank you for sending me a message!</p> : <button className = "contactBtn">Submit</button>}
-        {status === "ERROR" && <p className = "failure">Ooops! There was an error. Please fill out all the fields and try againy</p>}
+            {status === "SUCCESS" ? <p className="success">Thank you for sending me a message!</p> : <button className="contactBtn">Submit</button>}
+            {status === "ERROR" && <p className="failure">Ooops! There was an error. Please fill out all the fields and try againy</p>}
           </form>
           <div className="contactInfo text-center">
             <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
-            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
+            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a>
+            <form className = "resume-form" method="get" action={Resume}>
+              <span>Download my resume:</span>
+                <button className="btn"
+                  id="resumeBtn" type="submit">
+                  <i className="fa fa-download resume"></i></button>
+                  </form>
             <div className="social-links">
               <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
               <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
                 className="fa fa-linkedin fa-2x"></i></a></span>
 
+                {/* <span>Download my resume:</span><a class="resume" href="AlexResume.pdf" target="_blank"><button><i
+                  class="fa fa-download"></i></button></a> */}
+            </div>
             </div>
           </div>
         </div>
-      </div>
 
     );
   }
