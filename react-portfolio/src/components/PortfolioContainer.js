@@ -1,18 +1,37 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
 import Card from "./Card";
 import empDir from "../assets/images/empDir2.jpg";
 import quarImg from "../assets/images/main.jpg";
 import busImg from "../assets/images/businessSS.jpg";
-import empTrack from "../assets/images/usage.gif";
 import weatherImg from "../assets/images/weatherSs.jpg";
 import petImg from "../assets/images/petSs.jpg";
 import healthImg from "../assets/images/health.gif";
 
 function PortfolioContainer() {
-
+  var myVar;
   const [index, setIndex] = useState([0]);
+ const [userClick, setUserClick] = useState(false);
   
+  useEffect(() => {
+    if (userClick === false) {
+    startCarousel();
+    }
+  });
+
+  function startCarousel() {
+    let thisIndex = index;
+    if (index === 5) {
+      thisIndex = 0;
+    }
+    else { thisIndex++ }
+    myVar = setTimeout(function(){
+      if (userClick === false) {
+      setIndex(thisIndex);
+      }
+     }, 5000);
+  }
+
   var projArr = [{
     id: "healtcareProImg", img: healthImg, name: "Healthcare Pro ", description: "Role-based Full Stack application that allows doctors and patients to log in to separate portals and interact with one another in a multitude of ways.", tech: " Node.js, Express, MongoDB, Mongoose, React, Redux, JWT Tokens, Material-UI", projLink: " https://project3-healthcarepro.herokuapp.com/", ghLink: " https://github.com/gwlee244/project3"
   },
@@ -27,8 +46,11 @@ function PortfolioContainer() {
 },
   { id: "petImg", img: petImg, name: "Pet Adoption App", description:"Search for adoptable dogs and cats in your area and find information as well as maps and directions to find these needy animals.", tech: "HTML, CSS, Javascript, Jquery, Materialize, Petfinder API, TheDog API, TheCat API, Mapquest API", projLink: "https://alexcoulter.github.io/Furry-Friend-Finder/", ghLink: "https://github.com/alexcoulter/Furry-Friend-Finder"}];
 
+  
 
   function lastProject() {
+    setUserClick(true);
+    clearTimeout(myVar);
     let newIndex = index;
     if (index < 1) {
       newIndex = 5;
@@ -36,17 +58,21 @@ function PortfolioContainer() {
     }
     else { 
       newIndex--;
-      setIndex(newIndex);
     }
+    setIndex(newIndex);
   }
 
   function nextProject() {
+    setUserClick(true);
+    clearTimeout(myVar);
     let newIndex = index;
     if (index === 5) {
       newIndex = 0;
     }
-    else { newIndex++ }
-    setIndex(newIndex);
+    else { 
+      newIndex++
+     }
+     setIndex(newIndex);
   }
 
 

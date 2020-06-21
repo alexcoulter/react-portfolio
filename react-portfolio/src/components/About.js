@@ -25,11 +25,11 @@ function About() {
                 <li><b>Libraries / Frameworks: </b>jQuery, Bootstrap, Express, Sequelize,  Materialize, Mongoose, React, Redux
               </li>
               </ul>
-              <form className="resume-form" method="get" action={Resume}>
-                <button className="btn"
-                  id="aboutResumeBtn" type="submit">Download my resume:
-                  <i className="fa fa-download resume"></i></button>
-              </form>
+
+              <a href={Resume} target='_blank' rel="noopener noreferrer"><button className="btn"
+                id="aboutResumeBtn" type="submit">Download my resume:
+                  <i className="fa fa-download resume"></i></button></a>
+
             </div>
           </div>
         </div>

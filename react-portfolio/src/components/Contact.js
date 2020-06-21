@@ -63,13 +63,13 @@ class Contact extends Component {
           </form>
           <div className="contactInfo text-center">
             <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
-            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a>
-            <form className = "resume-form" method="get" action={Resume}>
-              <span>Download my resume:</span>
+            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
+            <span>Download my resume:</span>
+            <a href={Resume} target='_blank' rel="noopener noreferrer">
                 <button className="btn"
                   id="resumeBtn" type="submit">
                   <i className="fa fa-download resume"></i></button>
-                  </form>
+                  </a>
             <div className="social-links">
               <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
               <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
