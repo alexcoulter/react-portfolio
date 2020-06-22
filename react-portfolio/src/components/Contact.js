@@ -35,7 +35,7 @@ class Contact extends Component {
   render() {
     const { status } = this.state;
     return (
-      <div className="py-4 bg-dark text-white" id="contactSect">
+      <div className="bg-dark text-white" id="contactSect">
         <div className="container" id="contact">
           <h2 className="contact text-center">Contact Me</h2>
 

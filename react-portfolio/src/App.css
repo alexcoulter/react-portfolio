@@ -1,6 +1,6 @@
 html {
   height: 100%;
-  width:100%;
+  width: 100%;
   margin: 0;
   scroll-behavior: smooth;
 }
@@ -10,7 +10,8 @@ body {
   padding: 0px;
   height: 100%;
   width: 100%;
-  background-color: rgba(135, 206, 250,.1);;
+  background-color: rgba(135, 206, 250, .1);
+  ;
 }
 
 p, a {
@@ -20,29 +21,31 @@ p, a {
   font-size: 17px;
   font-family: 'Zilla Slab', Arial, Helvetica, sans-serif;
 }
+
 #root {
-  height:100%;
-  margin-bottom:-100px;
+  height: 100%;
+  margin-bottom: -100px;
 }
+
 .wrapper {
-  height:100%;
-  
+  height: 100%;
 }
+
 #page-content {
-  min-height:100% !important;
-  width:100%;
-  margin-bottom:-100px;
+  min-height: 100% !important;
+  width: 100%;
+  margin-bottom: -100px;
   position: relative;
 }
 
 #aboutSect {
-  min-height:calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   background-color: #f0f8ff;
 }
 
-#aboutSect h2 {
+/* #aboutSect h2 {
 border:2px solid black;
-}
+} */
 
 #about {
   padding-bottom: 50px;
@@ -65,17 +68,17 @@ h1 {
 
 h2 {
   font-size: 50px;
-  text-emphasis: bold;
   font-family: 'Anton', sans-serif;
   font-stretch: expanded;
-  border-radius:15px;
-  border:2px solid white;
+  border-radius: 15px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
 }
 
 hr {
   border-bottom: 2px dotted white;
   color: white;
-  margin-left:50px;
+  margin-left: 50px;
   margin-right: 50px;
 }
 
@@ -86,7 +89,7 @@ hr {
 
 #home {
   min-height: calc(100vh - 100px);
-  background-color:rgba(0,0,0,.95);
+  background-color: rgba(0, 0, 0, .95);
   /* margin-bottom:-100px; */
 }
 
@@ -96,7 +99,6 @@ header {
   background-size: contain, cover;
   height: 66vw;
 }
-
 
 .name {
   padding-top: 25vw;
@@ -133,29 +135,28 @@ nav p {
 }
 
 .lastLink {
-  border:none;
+  border: none;
   padding-right: 0;
-
 }
 
 .nav p:hover {
   color: rgb(135, 206, 250);
 }
+
 .link:hover {
   text-decoration: none;
   color: rgb(135, 206, 250);
 }
 
-
 .social-links i {
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom:5%;
+  padding-bottom: 5%;
 }
 
 .main {
-  margin-top: 5%;
-  padding: 20px 30px 15px 30px;
+  margin-top: 80px;
+  padding: 20px 30px 30px 30px;
 }
 
 .main h2 {
@@ -163,19 +164,31 @@ nav p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
-#about {
-  padding-top: 50px;
-}
 
 .bioText {
   padding-bottom: 40px;
-  padding-top:50px;
 }
 
 .skills {
   font-size: 17px;
   font-family: 'Zilla Slab', Arial, Helvetica, sans-serif;
   line-height: 3;
+  display: inline-block;
+  padding: 30px 10px;
+  border: 1px solid grey;
+  background-color: whitesmoke;
+  max-width: 64%;
+  text-align: left;
+}
+
+.skills h4 {
+  padding-left: 37px;
+  text-align: left;
+}
+
+.skills li {
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .skills i:hover {
@@ -184,7 +197,7 @@ nav p {
 }
 
 .picContainer {
-  margin:0 auto;
+  margin: 0 auto;
   width: 50%;
   overflow: hidden;
   position: relative;
@@ -192,7 +205,7 @@ nav p {
   background-size: cover;
   height: 800px;
   padding-top: 36px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
@@ -209,11 +222,18 @@ nav p {
   padding-top: 0px;
 }
 
+#picWrapper {
+  text-align: center;
+}
+
 .me-pic {
-  width: 200px;
-  margin-right: 80px;
+  /* border: 15px solid rgb(24, 45, 58); */
+  /* width: 25%; */
+  width: auto;
+  /* margin-right: 5%; */
   margin-bottom: 40px;
   border-radius: 5px;
+  vertical-align: top;
 }
 
 #portfolio {
@@ -223,41 +243,30 @@ nav p {
   min-height: calc(100vh - 100px);
 }
 
-#portfolio h2 {
-  color: whitesmoke;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  background-color:rgba(0,0,0,.8);
-  margin-left:50px;
-  margin-right:50px;
-}
-
-#projButton {
-  text-align: center;
-  margin:0 auto;
-  padding-top:50px;
-}
 .arrow-left {
-position: absolute;
-top:40%;
-left:10px;
-color:white;
+  position: absolute;
+  top: 40%;
+  left: 10px;
+  color: white;
 }
 
 .arrow-right {
   position: absolute;
-  top:40%;
-  right:10px;
-  color:white;
+  top: 40%;
+  right: 10px;
+  color: white;
 }
 
 .arrow-left:hover, .arrow-right:hover {
-  color:rgb(135, 206, 250);
+  color: rgb(135, 206, 250);
 }
 
 .shortBio b {
   color: whitesmoke;
-  
+}
+
+#projDiv {
+  padding-bottom: 30px;
 }
 
 .portfolioImg {
@@ -266,17 +275,16 @@ color:white;
 }
 
 .projectText p {
-  color:white;
+  color: white;
   /* position: absolute;
   bottom:5%; */
-  opacity:1;
+  opacity: 1;
   background: none;
   padding: 0px 30px;
   font-size: 25px;
   width: 100%;
   text-align: left;
 }
-
 
 .picTextTop {
   position: absolute;
@@ -311,10 +319,10 @@ color:white;
 
 .picTextBottom a {
   padding-left: 20px;
-  padding-right:80px;
+  padding-right: 80px;
   color: rgb(135, 206, 250);
   font-family: 'Zilla Slab', cursive;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .btn {
@@ -333,16 +341,8 @@ color:white;
   min-height: calc(100vh - 100px);
 }
 
- h2 {
-  padding-top:100px !important;
-  padding-bottom:100px !important;
-  padding-left:50px;
-  padding-right:50px;
-  background-color: rgba(0,0,0,0.6);
-}
-
 #contact {
-  padding-top: 50px;
+  padding-top: 110px;
 }
 
 .contact {
@@ -355,10 +355,6 @@ color:white;
 
 .form-control {
   background-color: whitesmoke !important;
-}
-
-form {
-  padding-top:50px;
 }
 
 .contactInfo {
@@ -406,7 +402,11 @@ form {
 
 .resume-form {
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+.resumeLink {
+  text-align: center;
+  padding-left: 42px;
 }
 
 .resume {
@@ -424,14 +424,15 @@ form {
 }
 
 #aboutResumeBtn {
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: rgb(135, 206, 250);
+  margin-bottom: 0px;
+  text-align: left;
 }
 
 #aboutResumeBtn:hover {
   background-color: rgb(115, 190, 250);
 }
-
 
 .social-links i {
   margin: 10px 10px;
@@ -449,13 +450,13 @@ form {
 }
 
 .footer {
-  background-color: rgba(40,40,40,.8);
+  background-color: rgba(40, 40, 40, .8);
   color: whitesmoke;
-  text-align:center;
+  text-align: center;
   height: 100px;
   padding-top: 20px;
   font-size: 20px;
-  position:relative;
+  position: relative;
 }
 
 .success {
@@ -509,12 +510,12 @@ form {
   }
 }
 
-
 @media (max-width: 2000px) {
   .picContainer {
     width: 65%;
   }
 }
+
 @media (max-width: 1400px) {
   .picContainer {
     margin-bottom: 20px;
@@ -522,7 +523,7 @@ form {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
   .picContainer {
     margin-bottom: 20px;
     width: 80%;
@@ -540,7 +541,7 @@ form {
     margin-right: 15%;
   }
   .projectText p {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 
@@ -552,7 +553,9 @@ form {
   .main {
     margin-top: 50px;
   }
-
+  #contact {
+    padding-top: 50px;
+  }
   .picContainer {
     margin-bottom: 20px;
     width: 90%;
@@ -568,9 +571,10 @@ form {
     font-size: 34px;
   }
   .me-pic {
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 50vw;
+    height: auto;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
   .shortBio {
     font-size: 16px;
@@ -578,18 +582,25 @@ form {
     margin-left: 5%;
     margin-right: 5%;
   }
-
   .picContainer {
     width: 100%;
   }
-
+  .skills {
+    max-width: 100%;
+  }
   .skills h4 {
     text-align: center;
+    padding: 0;
   }
-
   .resume-form {
     text-align: center;
     margin: 0 auto;
+  }
+  .resumeLink {
+   
+    padding:0;
+    margin: 0 auto;
+    display: block;
   }
 }
 
@@ -609,7 +620,6 @@ form {
   .contactInfo, .contactInfo a {
     font-size: 20px;
   }
-  
   .shortBio {
     margin-bottom: 0;
     margin-top: 10px;
@@ -623,11 +633,10 @@ form {
   }
   nav p, nav a, nav {
     font-size: 14px;
-    padding:.3%;
+    padding: .3%;
   }
-
   .projectText p {
-    font-size:15px;
+    font-size: 15px;
   }
   .soc-links-top i {
     font-size: 20px;
