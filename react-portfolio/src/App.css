@@ -24,7 +24,7 @@ p, a {
 
 #root {
   height: 100%;
-  margin-bottom: -100px;
+  margin-bottom: -60px;
 }
 
 .wrapper {
@@ -34,12 +34,12 @@ p, a {
 #page-content {
   min-height: 100% !important;
   width: 100%;
-  margin-bottom: -100px;
+  margin-bottom: -60px;
   position: relative;
 }
 
 #aboutSect {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 60px);
   background-color: #f0f8ff;
 }
 
@@ -88,7 +88,7 @@ hr {
 }
 
 #home {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 60px);
   background-color: rgba(0, 0, 0, .95);
   /* margin-bottom:-100px; */
 }
@@ -118,28 +118,23 @@ header {
 }
 
 .navbar {
-  background-color: rgba(42, 42, 42, 0.8);
+  background-color: rgba(42,42,42,.95);
   position: fixed;
-  top: 0px;
-  height: 40px;
+  /* height: 40px; */
   width: 100%;
   z-index: 100;
 }
 
-nav p {
+.navbar p {
   font-size: 22px;
-  color: white;
-  padding: 25px 10px;
-  border-right: 1px solid grey;
+  /* color: white; */
+  padding: 0px 20px !important;
+  margin-top: 10px;
+  border-left: 1px solid grey;
   font-family: 'Zilla Slab', Arial, Helvetica, sans-serif;
 }
 
-.lastLink {
-  border: none;
-  padding-right: 0;
-}
-
-.nav p:hover {
+.navbar p:hover {
   color: rgb(135, 206, 250);
 }
 
@@ -240,7 +235,7 @@ nav p {
   background-image: url("./assets/images/blackboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 60px);
 }
 
 .arrow-left {
@@ -338,7 +333,7 @@ nav p {
 }
 
 #contactSect {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 60px);
 }
 
 #contact {
@@ -446,15 +441,15 @@ nav p {
 }
 
 .push {
-  height: 100px;
+  height: 60px;
 }
 
 .footer {
   background-color: rgba(40, 40, 40, .8);
   color: whitesmoke;
   text-align: center;
-  height: 100px;
-  padding-top: 20px;
+  height: 60px;
+  padding-top: 12px;
   font-size: 20px;
   position: relative;
 }
@@ -550,6 +545,10 @@ nav p {
     margin: 0;
     padding: 0;
   }
+  .navbar p {
+    border: none;
+   }
+
   .main {
     margin-top: 50px;
   }
@@ -570,6 +569,7 @@ nav p {
   h2, .contact {
     font-size: 34px;
   }
+
   .me-pic {
     width: 50vw;
     height: auto;
@@ -627,13 +627,10 @@ nav p {
 }
 
 @media (max-width: 450px) {
-  .navbar {
-    height: 34px;
-    padding: 0;
-  }
+  
   nav p, nav a, nav {
     font-size: 14px;
-    padding: .3%;
+    /* padding: .3%; */
   }
   .projectText p {
     font-size: 15px;
