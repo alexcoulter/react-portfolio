@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8639d3e528d793a4e0c7fa986d108b2d",
+    "revision": "bf67235981d61d7842b0cecb45241070",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "a4c652707a6f27b9a23b",
-    "url": "/react-portfolio/static/css/main.968478e2.chunk.css"
+    "revision": "3cf0c44c41280508f024",
+    "url": "/react-portfolio/static/css/main.509db069.chunk.css"
   },
   {
     "revision": "1f7f0d9058ede4d4877e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/js/2.bee72901.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4c652707a6f27b9a23b",
-    "url": "/react-portfolio/static/js/main.242dcb06.chunk.js"
+    "revision": "3cf0c44c41280508f024",
+    "url": "/react-portfolio/static/js/main.2c9df74d.chunk.js"
   },
   {
     "revision": "37db3f26b7c0ea36aed0",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fb68fe26bdfbd4fc7440944eb9f59b52",
     "url": "/react-portfolio/static/media/camping.fb68fe26.jpg"
+  },
+  {
+    "revision": "608ab5fe4a45e2ac93febd3416b260f0",
+    "url": "/react-portfolio/static/media/dust_scratches.608ab5fe.png"
   },
   {
     "revision": "64010fdd8463ab7339a2b18d78af8917",
