@@ -37,9 +37,11 @@ function About() {
                 <div className="bioText">
                   <h4><b>Technical Skills:</b></h4>
                   <ul>
-                    <li><b>Programming Languages:</b> HTML, CSS, Javascript, Node.js</li>
-                    <li><b>Database Management:</b> Mysql, MongoDb</li>
-                    <li><b>Libraries / Frameworks: </b>jQuery, Bootstrap, Express, Sequelize,  Materialize, Mongoose, React, Redux
+                    <li><b>Programming Languages:</b> HTML, CSS, Javascript</li>
+                    <li><b>Database Management:</b> Mysql, Sequelize MongoDb, Mongoose</li>
+                    <li><b>Libraries / Frameworks: </b>jQuery, React.js, Redux,  Express.js, Bootstrap,  Materialize
+              </li>
+              <li><b>Other Technologies: </b>Node.js, Passport.js, Handlebars, Git, Heroku, JWT Tokens, AJAX, IndexedDB API
               </li>
                   </ul>
                   <a href={Resume} target='_blank' rel="noopener noreferrer" className="resumeLink"><button className="btn"
