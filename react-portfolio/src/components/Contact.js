@@ -39,7 +39,9 @@ class Contact extends Component {
         <div className="container" id="contact">
           <h2 className="contact text-center">Contact Me</h2>
 
-          <form onSubmit={this.submitForm}
+          <form
+            className="contact-form"
+            onSubmit={this.submitForm}
             action="https://formspree.io/xknqzwvk"
             method="POST">
             <div className="form-group">
@@ -66,21 +68,21 @@ class Contact extends Component {
             <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
             <span>Download my resume:</span>
             <a href={Resume} target='_blank' rel="noopener noreferrer">
-                <button className="btn"
-                  id="resumeBtn" type="submit">
-                  <i className="fa fa-download resume"></i></button>
-                  </a>
+              <button className="btn"
+                id="resumeBtn" type="submit">
+                <i className="fa fa-download resume"></i></button>
+            </a>
             <div className="social-links">
               <span><a href="https://github.com/alexcoulter" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-3x"></i></a></span>
               <span><a href="https://www.linkedin.com/in/alex-coulter/" target="_blank" rel="noopener noreferrer"><i
                 className="fa fa-linkedin fa-2x"></i></a></span>
 
-                {/* <span>Download my resume:</span><a class="resume" href="AlexResume.pdf" target="_blank"><button><i
+              {/* <span>Download my resume:</span><a class="resume" href="AlexResume.pdf" target="_blank"><button><i
                   class="fa fa-download"></i></button></a> */}
-            </div>
             </div>
           </div>
         </div>
+      </div>
 
     );
   }

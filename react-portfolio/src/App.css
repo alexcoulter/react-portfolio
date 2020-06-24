@@ -40,7 +40,7 @@ p, a {
 
 #aboutSect {
   min-height: calc(100vh - 60px);
-  background-color: #f0f8ff;
+  background-image: url("./assets/images/dust_scratches.png");
 }
 
 /* #aboutSect h2 {
@@ -68,11 +68,11 @@ h1 {
 
 h2 {
   font-size: 50px;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Trade Winds';
   font-stretch: expanded;
-  border-radius: 15px;
-  padding-top: 30px !important;
-  padding-bottom: 30px !important;
+  padding-top: 60px !important;
+  /* border-bottom: 1px solid grey; */
+  /* padding-bottom: 60px !important; */
 }
 
 hr {
@@ -161,7 +161,18 @@ header {
 }
 
 .bioText {
-  padding-bottom: 40px;
+  padding: 12px 20px 12px 20px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 50%;
+  min-width: 700px;
+  margin-top: 50px;
+
+  /* border-right: 1px solid rgb(161, 160, 160);
+  border-left: 1px solid rgb(161, 160, 160); */
+  /* background-color: #f7fbff; */
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+
 }
 
 .skills {
@@ -169,10 +180,10 @@ header {
   font-family: 'Zilla Slab', Arial, Helvetica, sans-serif;
   line-height: 3;
   display: inline-block;
-  padding: 30px 10px;
-  border: 1px solid grey;
+  margin-left: 5%;
+  margin-right: 5%;
   background-color: whitesmoke;
-  max-width: 64%;
+  max-width: 50%;
   text-align: left;
 }
 
@@ -181,7 +192,11 @@ header {
   text-align: left;
 }
 
-.skills li {
+.skills p {
+  margin: 0;
+}
+
+.bioText li {
   word-wrap: break-word;
   text-align: left;
 }
@@ -219,16 +234,19 @@ header {
 
 #picWrapper {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px !important;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
 .me-pic {
-  /* border: 15px solid rgb(24, 45, 58); */
-  /* width: 25%; */
+  border: 1px solid grey;
   width: auto;
-  /* margin-right: 5%; */
   margin-bottom: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   vertical-align: top;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.36), 0 5px 10px 0 rgba(0,0,0,.32);
 }
 
 #portfolio {
@@ -262,6 +280,7 @@ header {
 
 #projDiv {
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .portfolioImg {
@@ -334,16 +353,21 @@ header {
 
 #contactSect {
   min-height: calc(100vh - 60px);
+  background-image: url("./assets/images/prism.png");
+}
+
+.contact-form {
+  margin-top: 30px;
 }
 
 #contact {
-  padding-top: 110px;
+  padding-top: 100px;
 }
 
 .contact {
   font-size: 50px;
   color: rgb(135, 206, 250);
-  font-family: 'Anton', sans-serif;
+  font-family: 'Trade Winds';
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
@@ -523,9 +547,10 @@ header {
     margin-bottom: 20px;
     width: 80%;
   }
+
 }
 
-@media (max-width: 830px) {
+@media (max-width: 854px) {
   .picTextBottom a {
     padding: 0px 20px;
   }
@@ -534,6 +559,10 @@ header {
     margin-top: 50px;
     margin-left: 15%;
     margin-right: 15%;
+  }
+
+  .skills {
+    max-width: 700px;
   }
   .projectText p {
     font-size: 20px;
@@ -563,6 +592,12 @@ header {
     text-align: left !important;
     margin-left: 10%;
   }
+  .bioText {
+    min-width: 100%;
+  }
+  .skills {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 681px) {
@@ -588,16 +623,21 @@ header {
   .skills {
     max-width: 100%;
   }
+
+  .bioText {
+    margin-left: 0;
+    width: 100%;
+  }
   .skills h4 {
     text-align: center;
     padding: 0;
   }
+
   .resume-form {
     text-align: center;
     margin: 0 auto;
   }
   .resumeLink {
-   
     padding:0;
     margin: 0 auto;
     display: block;
