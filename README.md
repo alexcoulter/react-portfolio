@@ -18,16 +18,16 @@ I created this mobile-friendly portfolio to show prospective employers who I am 
   
   ## Screenshots
 * Landing Page
-<div align="center"><img  alt= "Screenshot of Landing Page" src= "./react-portfolio/img/home.jpg" width="600px" /></div>
+<div align="center"><img  alt= "Screenshot of Landing Page" src= "./img/home.jpg" width="600px" /></div>
 
 * About Page
-<div align="center"><img  alt= "Screenshot of About Page" src= "./react-portfolio/img/about.jpg" width="600px" /></div>
+<div align="center"><img  alt= "Screenshot of About Page" src= "./img/about.jpg" width="600px" /></div>
 
 * Projects Page
-<div align="center"><img  alt= "Screenshot of My Projects page" src= "./react-portfolio/img/projects.jpg" width="600px" /></div>
+<div align="center"><img  alt= "Screenshot of My Projects page" src= "./img/projects.jpg" width="600px" /></div>
 
 * Contact Page
-<div align="center"><img  alt= "Screenshot of Contact Page" src= "./react-portfolio/img/contact.jpg" width="600px" /></div>
+<div align="center"><img  alt= "Screenshot of Contact Page" src= "./img/contact.jpg" width="600px" /></div>
 
    
    ## Built With  	

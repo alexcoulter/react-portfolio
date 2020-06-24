@@ -15,7 +15,7 @@ function App() {
     <HashRouter>
      <Navbar />
     <Switch>
-      <Route exact path="/about" component={About} />
+      <Route exact path="/about"  component={About} />
       <Route exact path="/projects" component={PortfolioContainer} />
       <Route exact path="/contact" component={Contact} />
       <Route path="/" component={Header} />

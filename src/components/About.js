@@ -33,8 +33,7 @@ function About() {
                   </p>
                 </div>
               </div>
-
-              <div class="bioTextContainer">
+              <div className="bioTextContainer">
                 <div className="bioText">
                   <h4><b>Technical Skills:</b></h4>
                   <ul>
@@ -43,11 +42,9 @@ function About() {
                     <li><b>Libraries / Frameworks: </b>jQuery, Bootstrap, Express, Sequelize,  Materialize, Mongoose, React, Redux
               </li>
                   </ul>
-
                   <a href={Resume} target='_blank' rel="noopener noreferrer" className="resumeLink"><button className="btn"
                     id="aboutResumeBtn" type="submit">Download my resume:
                   <i className="fa fa-download resume"></i></button></a>
-
                 </div>
               </div>
             </div>
