@@ -9,10 +9,8 @@ function About() {
     if (window.screen.width > 681) {
       const skills = document.getElementById("skills");
       const skillsHeight = skills.offsetHeight;
-      console.log(skillsHeight);
       const mePic = document.getElementById("mePic");
       mePic.style.height = `${skillsHeight}px`;
-      console.log(window.screen.width);
     }
   }
   );
@@ -41,7 +39,7 @@ function About() {
                     <li><b>Database Management:</b> Mysql, Sequelize MongoDb, Mongoose</li>
                     <li><b>Libraries / Frameworks: </b>jQuery, React.js, Redux,  Express.js, Bootstrap,  Materialize
               </li>
-              <li><b>Other Technologies: </b>Node.js, Passport.js, Handlebars, Git, Heroku, JWT Tokens, AJAX, IndexedDB API
+              <li><b>Other Technologies: </b>Node.js, Passport.js, Handlebars, Git, Heroku, JWT Auth, AJAX, IndexedDB API
               </li>
                   </ul>
                   <a href={Resume} target='_blank' rel="noopener noreferrer" className="resumeLink"><button className="btn"

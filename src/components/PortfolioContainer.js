@@ -17,6 +17,9 @@ function PortfolioContainer() {
     if (userClick === false) {
       startCarousel();
     }
+    return function cleanup() {
+      clearTimeout(myVar);
+    };
   });
 
   function startCarousel() {
