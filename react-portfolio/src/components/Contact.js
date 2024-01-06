@@ -65,7 +65,6 @@ class Contact extends Component {
           </form>
           <div className="contactInfo text-center">
             <span>Email: </span><a href="mailto:alexcoulter.unc@gmail.com">alexcoulter.unc@gmail.com</a><br />
-            <span>Call: </span><a href="tel:(919)698-9039">(919)698-9039</a><br />
             <span>Download my resume:</span>
             <a href={Resume} target='_blank' rel="noopener noreferrer">
               <button className="btn"
